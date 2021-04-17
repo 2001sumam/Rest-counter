@@ -1,0 +1,117 @@
+
+
+.header{
+    text-align: center;
+    align-items: center;
+   justify-content: center;
+    display: flex;
+    margin-top: 4rem;
+
+}
+.container{
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    margin-top: 6rem;
+}
+.country{
+    width: 16%;
+    animation: loadcountry 1s ease-in;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 12px;
+    font-family: 'Nunito', sans-serif;
+   
+}
+.country h3,h4{
+    margin: 8px 10px;
+}
+.country_card img{
+    width: 100%;
+    
+    box-shadow: 0px 2px 6px 0px gray;
+}
+.country_card{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes loadcountry{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 100;
+    }
+}
+.right{
+    text-align: left;
+    padding: 10px;
+}
+.right h1{
+    font-size: 1.8rem;
+    margin: 3px 1px;
+}
+.search{
+   border: none;
+   font-size: 25px;
+   outline: none;
+   width: 75%;
+   padding:1px 25px;
+   font-family: 'Nunito', sans-serif;
+}
+.btn,.btnc{
+   
+ background-color: white;
+ width: 45px;
+ justify-content: center;
+ padding-bottom: 15px;
+ border: none;  
+ cursor: pointer;
+}
+
+.btnc .fa{
+    font-size: 22px;
+    color: rgb(31, 132, 248);
+    cursor: pointer;
+    padding-top: 15px;
+    
+    transition: all 0.5s ease-in;
+    
+}
+.btn .fa {
+    font-size: 22px;
+    color: rgb(31, 132, 248);
+    cursor: pointer;
+    padding-top: 15px;
+    
+    transition: all 0.5s ease-in;
+    
+}
+.btn .fa:hover{
+    color: rgb(255, 0, 255);
+}
+.btnc .fa:hover{
+    color: rgb(255, 0, 255);
+}
+.search_box{
+ display: flex;
+ width: 40%;
+ background-color:white;
+ padding:1px 20px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ padding-right: 0px;
+ border-radius: 15px;
+
+  
+}
+.lang{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 14px;
+}
+.lang h4{
+    margin: 0px 2px;
+}
