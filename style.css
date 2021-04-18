@@ -16,10 +16,13 @@
 }
 .country{
     width: 16%;
-    animation: loadcountry 1s ease-in;
+    animation: loadcountry 0.6s ease-in;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 12px;
     font-family: 'Nunito', sans-serif;
+   
+   
+
    
 }
 .country h3,h4{
@@ -35,6 +38,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 @keyframes loadcountry{
@@ -114,4 +118,30 @@
 }
 .lang h4{
     margin: 0px 2px;
+}
+
+@media (max-width:580px){
+    .country_card{
+      
+     flex-wrap: wrap;
+        
+    }
+    
+    .country{
+        width: 70%;
+    }
+    .search_box{
+        width: 80%;
+        padding-right: 15px;
+    }
+}
+@media (min-width:581px) and (max-width:768px){
+    
+    .country{
+        width: 30%;
+    }
+    .search_box{
+        width:60%;
+        padding-right: 15px;
+    }
 }

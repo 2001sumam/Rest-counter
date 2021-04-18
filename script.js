@@ -8,15 +8,18 @@ const funk= document.querySelector(".funk")
 buttonClear.addEventListener('click',function(){
     search.value="";
 });
-// create click event
-button.addEventListener('click', function () {
+
+// create click event function
+const clickfunk = function(){
     const rendercountry = function (data) {
         const html = `
                 <article class="country">
                     <img class ="country_img" src="${data.flag}"/>
                     <div class="right">
+                        
                         <h1>${data.name}</h1>
                         <h3>${data.region}</h3>
+                       
                         <div class ="lang"><span>🗣</span>${data.languages.map(staklang)}</div>
                         <h4><span>👨‍👩‍👧‍👦</span>${data.population}</h4>
                         <h4><span>🕓</span>${data.timezones[0]}</h4>
@@ -48,7 +51,15 @@ button.addEventListener('click', function () {
     }
     // call main function
     getcountry(search.value);
-    // search.value="";
+};
+
+// call click event function
+button.addEventListener('click', clickfunk);
+// create enter event 
+search.addEventListener("keyup",function(e){
+    let key = e.key;
+    if(key === "Enter"){
+        clickfunk();
+    }
 });
-
-
+    
